@@ -1,0 +1,13 @@
+node_modules/
+.storybook/
+.vscode/
+nginx/
+public/
+src/**/*
+Jenkinsfile
+dockerfile
+rollup.config.js
+setup_env.sh
+sonar-project.properties
+yarn.lock
+logs/
