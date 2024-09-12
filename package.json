@@ -1,6 +1,6 @@
 {
-  "name": "@do64013-pos/common-utilities",
-  "version": "1.1.2",
+  "name": "@alternatech/ctil",
+  "version": "1.0.0",
   "description": "",
   "main": "build/app.js",
   "types": "build/app.d.ts",
@@ -9,11 +9,7 @@
     "test": "cross-env NODE_ENV=test TS_NODE_FILES=true mocha --exit --require ts-node/register test/app.test.js test/ioc.test.js",
     "coverage": "nyc --no-cache yarn test"
   },
-  "repository": {
-    "type": "git",
-    "url": "http://pds-git-p01.pttdigital.corp/gitlab/ata/atar/pttor/posoil/PTTDIGITAL.POS.OIL.COMMON.UTILITIES.git"
-  },
-  "author": "PTT Digital",
+  "author": "Surapich Chairgulprasert",
   "license": "ISC",
   "dependencies": {
     "@socket.io/redis-emitter": "5.1.0",
