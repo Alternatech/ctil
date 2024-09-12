@@ -9,7 +9,6 @@ on:
 
 jobs:
   publish-gpr:
-    needs: build
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -21,6 +20,7 @@ jobs:
           node-version: 18
           registry-url: https://npm.pkg.github.com/
       - run: yarn install --immutable --immutable-cache --check-cache
+      - run: yarn tsc
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
